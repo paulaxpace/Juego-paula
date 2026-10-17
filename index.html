@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paula &amp; John · 14 de agosto de 2027</title>
+<meta name="description" content="Paula y John te invitan a celebrar su boda el sábado 14 de agosto de 2027.">
+<meta property="og:title" content="Paula &amp; John · 14 de agosto de 2027">
+<meta property="og:description" content="Te invitamos a celebrar nuestra boda.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ground: #EDF0EA;
+  --page: #DDE2D8;
+  --ink: #1F2F26;
+  --accent: #7A5F3E;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+  background: var(--page);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+/* .wrap fija la escala: todo dentro usa cqw (1cqw = 1% del ancho de la tarjeta) */
+.wrap {
+  width: min(100%, 600px);
+  container-type: inline-size;
+}
+.card {
+  aspect-ratio: 600 / 840;
+  background: var(--ground);
+  padding: 4.667cqw;
+  box-shadow: 0 1px 2px rgba(31, 47, 38, .08), 0 12px 32px rgba(31, 47, 38, .10);
+}
+.frame {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8cqw 6.667cqw;
+}
+.small {
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: 2cqw;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.small.strong { font-weight: 500; }
+.accent { color: var(--accent); }
+.rule {
+  width: 6.667cqw;
+  height: 1px;
+  background: var(--accent);
+  border: 0;
+  margin: 0;
+}
+.name {
+  margin: 0;
+  font-size: 14cqw;
+  line-height: .95;
+  font-weight: 400;
+}
+.amp {
+  margin: 1cqw 0;
+  font-size: 6cqw;
+  line-height: 1;
+  font-style: italic;
+  color: var(--accent);
+}
+.lead {
+  margin: 5cqw 0;
+  font-size: 3.333cqw;
+  font-style: italic;
+}
+.date {
+  margin: 1.333cqw 0 0;
+  font-size: 5.667cqw;
+  line-height: 1.1;
+  font-weight: 500;
+}
+.time {
+  margin: 1.333cqw 0 0;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: 2.167cqw;
+  letter-spacing: .16em;
+}
+.place {
+  margin: 4.333cqw 0 0;
+  font-size: 4cqw;
+  line-height: 1.15;
+  font-weight: 500;
+}
+.city {
+  margin: .667cqw 0 0;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: 2.167cqw;
+  letter-spacing: .08em;
+}
+.rsvp {
+  margin: 5.667cqw 0 0;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-size: 2cqw;
+  letter-spacing: .08em;
+  color: var(--accent);
+}
+/* Impresión: solo la tarjeta */
+@media print {
+  body { background: #fff; padding: 0; min-height: 0; }
+  .card { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <article class="card">
+    <div class="frame">
+      <p class="small strong accent">Con la bendición de nuestras familias</p>
+      <hr class="rule" style="margin-top:3.667cqw">
+      <h1 class="name" style="margin-top:5cqw">Paula</h1>
+      <p class="amp" aria-hidden="true">&amp;</p>
+      <h1 class="name">John</h1>
+      <p class="lead">te invitan a celebrar su boda</p>
+      <hr class="rule">
+      <p class="small strong" style="margin-top:4.333cqw">Sábado</p>
+      <p class="date">14 de agosto de 2027</p>
+      <p class="time">4:00 P. M.</p>
+      <p class="place">Hacienda Los Almendros</p>
+      <p class="city">Rionegro, Antioquia</p>
+      <p class="rsvp">Confirma tu asistencia antes del 14 de junio de 2027</p>
+    </div>
+  </article>
+</main>
+</body>
+</html>
